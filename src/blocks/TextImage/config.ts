@@ -1,6 +1,11 @@
 import type { Block, Field } from 'payload'
 
-import { FixedToolbarFeature, InlineToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
+import {
+  FixedToolbarFeature,
+  HeadingFeature,
+  InlineToolbarFeature,
+  lexicalEditor,
+} from '@payloadcms/richtext-lexical'
 
 const richText: Field = {
   name: 'richText',
@@ -9,6 +14,7 @@ const richText: Field = {
   editor: lexicalEditor({
     features: ({ rootFeatures }) => [
       ...rootFeatures,
+      HeadingFeature({ enabledHeadingSizes: ['h2', 'h3', 'h4'] }),
       FixedToolbarFeature(),
       InlineToolbarFeature(),
     ],
