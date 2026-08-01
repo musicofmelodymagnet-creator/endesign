@@ -12,25 +12,13 @@ import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { ContactSection } from '@/components/ContactSection'
-import { locales, type Locale } from '@/i18n/config'
+import type { Locale } from '@/i18n/config'
 
-export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
-  const pages = await payload.find({
-    collection: 'pages',
-    draft: false,
-    limit: 1000,
-    overrideAccess: false,
-    pagination: false,
-    select: {
-      slug: true,
-    },
-  })
-
-  const slugs = pages.docs?.filter((doc) => doc.slug !== 'home').map(({ slug }) => slug) || []
-
-  return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })))
-}
+// No generateStaticParams here on purpose: pre-rendering these at build time
+// would require a live Postgres connection during `docker build`, before the
+// database service is even up. Pages render on first request instead and are
+// cached per `revalidate` below (same ISR behavior, just resolved lazily).
+export const revalidate = 60
 
 type Args = {
   params: Promise<{

@@ -15,13 +15,13 @@ import { getCachedGlobal } from '@/utilities/getGlobals'
 import { cn } from '@/utilities/ui'
 import { getDictionary } from '@/i18n/dictionary'
 import { highlightAccent } from '@/i18n/highlight'
-import { locales, type Locale } from '@/i18n/config'
+import type { Locale } from '@/i18n/config'
 
+// No generateStaticParams here on purpose: pre-rendering this at build time
+// would require a live Postgres connection during `docker build`, before the
+// database service is even up. The page renders on first request instead and
+// is cached per `revalidate` below (same ISR behavior, just resolved lazily).
 export const revalidate = 60
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }))
-}
 
 type Args = { params: Promise<{ locale: string }> }
 

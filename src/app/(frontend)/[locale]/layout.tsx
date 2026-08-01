@@ -18,7 +18,7 @@ import { ScrollToTop } from '@/components/ScrollToTop'
 import { BriefModal } from '@/components/BriefModal'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { draftMode } from 'next/headers'
-import { isLocale, locales, type Locale } from '@/i18n/config'
+import { isLocale, type Locale } from '@/i18n/config'
 
 import '../globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
@@ -38,10 +38,10 @@ const play = Play({
   display: 'swap',
 })
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }))
-}
-
+// No generateStaticParams here on purpose: this layout fetches from Payload
+// (the brief form, plus Header/Footer inside), which would require a live
+// Postgres connection during `docker build`, before the database service is
+// even up. Rendering happens dynamically per request instead.
 type Args = {
   children: React.ReactNode
   params: Promise<{ locale: string }>

@@ -15,19 +15,13 @@ import { Media } from '@/components/Media'
 import { QuickContactBar } from '@/components/QuickContactBar'
 import { StampBadge } from '@/components/StampBadge'
 import { getDictionary } from '@/i18n/dictionary'
-import { locales, type Locale } from '@/i18n/config'
+import type { Locale } from '@/i18n/config'
 
-export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
-  const services = await payload.find({
-    collection: 'services',
-    limit: 1000,
-    pagination: false,
-    select: { slug: true },
-  })
-
-  return locales.flatMap((locale) => services.docs.map(({ slug }) => ({ locale, slug })))
-}
+// No generateStaticParams here on purpose: pre-rendering these at build time
+// would require a live Postgres connection during `docker build`, before the
+// database service is even up. Pages render on first request instead and are
+// cached per `revalidate` below (same ISR behavior, just resolved lazily).
+export const revalidate = 60
 
 type Args = {
   params: Promise<{ locale: string; slug: string }>
