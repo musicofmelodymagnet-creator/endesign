@@ -10,6 +10,9 @@ import { Reveal } from '@/components/Reveal'
 import { StampBadge } from '@/components/StampBadge'
 import { getDictionary } from '@/i18n/dictionary'
 import type { Locale } from '@/i18n/config'
+import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
+import { generateAlternates } from '@/utilities/generateAlternates'
+import { getServerSideURL } from '@/utilities/getURL'
 
 // No generateStaticParams here on purpose: pre-rendering this at build time
 // would require a live Postgres connection during `docker build`, before the
@@ -87,5 +90,17 @@ const META: Record<Locale, { title: string; description: string }> = {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale }
-  return META[locale] || META.uk
+  const meta = META[locale] || META.uk
+  return {
+    ...meta,
+    alternates: generateAlternates(locale, '/portfolio'),
+    openGraph: mergeOpenGraph(
+      {
+        title: meta.title,
+        description: meta.description,
+        url: `${getServerSideURL()}/${locale}/portfolio`,
+      },
+      locale,
+    ),
+  }
 }

@@ -12,6 +12,9 @@ import { TeamSection } from '@/components/TeamSection'
 import { Reveal } from '@/components/Reveal'
 import { StampBadge } from '@/components/StampBadge'
 import { getCachedGlobal } from '@/utilities/getGlobals'
+import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
+import { generateAlternates } from '@/utilities/generateAlternates'
+import { getServerSideURL } from '@/utilities/getURL'
 import { cn } from '@/utilities/ui'
 import { getDictionary } from '@/i18n/dictionary'
 import { highlightAccent } from '@/i18n/highlight'
@@ -296,5 +299,17 @@ const META: Record<Locale, { title: string; description: string }> = {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale }
-  return META[locale] || META.uk
+  const meta = META[locale] || META.uk
+  return {
+    ...meta,
+    alternates: generateAlternates(locale, ''),
+    openGraph: mergeOpenGraph(
+      {
+        title: meta.title,
+        description: meta.description,
+        url: `${getServerSideURL()}/${locale}`,
+      },
+      locale,
+    ),
+  }
 }

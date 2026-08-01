@@ -12,6 +12,7 @@ import { Media } from '@/components/Media'
 import { Reveal } from '@/components/Reveal'
 import { getDictionary } from '@/i18n/dictionary'
 import type { Locale } from '@/i18n/config'
+import { generateMeta } from '@/utilities/generateMeta'
 
 // No generateStaticParams here on purpose: pre-rendering these at build time
 // would require a live Postgres connection during `docker build`, before the
@@ -65,7 +66,7 @@ export default async function CaseStudyPage({ params: paramsPromise }: Args) {
       </div>
 
       {hasLayout ? (
-        <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} />
+        <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} locale={locale} />
       ) : (
         <div className="container mt-4 mb-16">
           <p className="text-muted-foreground border-border/60 bg-card max-w-xl rounded-2xl border p-6 text-sm">
@@ -86,10 +87,7 @@ export default async function CaseStudyPage({ params: paramsPromise }: Args) {
 export async function generateMetadata({ params: paramsPromise }: Args): Promise<Metadata> {
   const { slug, locale } = (await paramsPromise) as { slug: string; locale: Locale }
   const caseStudy = await queryCaseStudyBySlug({ slug, locale })
-  return {
-    title: caseStudy?.title ? `${caseStudy.title} | EnDesign` : 'EnDesign',
-    description: caseStudy?.meta?.description || undefined,
-  }
+  return generateMeta({ doc: caseStudy, path: `/portfolio/${slug}`, locale })
 }
 
 const queryCaseStudyBySlug = cache(async ({ slug, locale }: { slug: string; locale: Locale }) => {

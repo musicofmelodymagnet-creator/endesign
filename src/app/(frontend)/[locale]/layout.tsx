@@ -16,6 +16,7 @@ import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { BriefModal } from '@/components/BriefModal'
+import { OrganizationJsonLd } from '@/components/OrganizationJsonLd'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { draftMode } from 'next/headers'
 import { isLocale, type Locale } from '@/i18n/config'
@@ -74,6 +75,7 @@ export default async function RootLayout({ children, params }: Args) {
         <link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
         <link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+        <OrganizationJsonLd locale={locale as Locale} />
       </head>
       <body>
         <Providers>
@@ -88,7 +90,7 @@ export default async function RootLayout({ children, params }: Args) {
           <Footer locale={locale as Locale} />
           <ScrollToTop />
           {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-          <BriefModal form={(briefForm.docs[0] as any) || null} />
+          <BriefModal form={(briefForm.docs[0] as any) || null} locale={locale as Locale} />
         </Providers>
       </body>
     </html>
@@ -100,6 +102,5 @@ export const metadata: Metadata = {
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
-    creator: '@payloadcms',
   },
 }

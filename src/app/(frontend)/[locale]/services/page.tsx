@@ -11,6 +11,9 @@ import { StampBadge } from '@/components/StampBadge'
 import { getDictionary } from '@/i18n/dictionary'
 import type { Locale } from '@/i18n/config'
 import { getServicesDirectory, type DirectoryLeaf } from '@/utilities/getServicesDirectory'
+import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
+import { generateAlternates } from '@/utilities/generateAlternates'
+import { getServerSideURL } from '@/utilities/getURL'
 
 function DirectoryTile({ locale, item }: { locale: Locale; item: DirectoryLeaf }) {
   return (
@@ -179,5 +182,17 @@ const META: Record<Locale, { title: string; description: string }> = {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale }
-  return META[locale] || META.uk
+  const meta = META[locale] || META.uk
+  return {
+    ...meta,
+    alternates: generateAlternates(locale, '/services'),
+    openGraph: mergeOpenGraph(
+      {
+        title: meta.title,
+        description: meta.description,
+        url: `${getServerSideURL()}/${locale}/services`,
+      },
+      locale,
+    ),
+  }
 }

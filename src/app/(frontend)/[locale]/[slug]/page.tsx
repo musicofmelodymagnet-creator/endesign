@@ -58,7 +58,7 @@ export default async function Page({ params: paramsPromise }: Args) {
       ) : (
         <>
           <RenderHero {...hero} />
-          <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} />
+          <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} locale={locale as Locale} />
         </>
       )}
     </article>
@@ -70,7 +70,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   const decodedSlug = decodeURIComponent(slug)
   const page = await queryPageBySlug({ slug: decodedSlug, locale: locale as Locale })
 
-  return generateMeta({ doc: page })
+  return generateMeta({ doc: page, path: `/${decodedSlug}`, locale: locale as Locale })
 }
 
 const queryPageBySlug = cache(async ({ slug, locale }: { slug: string; locale: Locale }) => {

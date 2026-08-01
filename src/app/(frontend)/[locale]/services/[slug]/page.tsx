@@ -84,7 +84,7 @@ export default async function ServicePage({ params: paramsPromise }: Args) {
         </div>
       )}
 
-      <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} />
+      <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} locale={locale} />
 
       {children && children.docs.length > 0 && (
         <div className="container mt-16">
@@ -135,7 +135,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   const { slug, locale } = (await paramsPromise) as { slug: string; locale: Locale }
   const service = await queryServiceBySlug({ slug, locale })
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return generateMeta({ doc: service as any })
+  return generateMeta({ doc: service as any, path: `/services/${slug}`, locale })
 }
 
 const queryServiceBySlug = cache(async ({ slug, locale }: { slug: string; locale: Locale }) => {
