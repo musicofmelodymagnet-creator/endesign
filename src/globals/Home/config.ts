@@ -1,5 +1,6 @@
 import type { GlobalConfig } from 'payload'
 
+import { authenticated } from '@/access/authenticated'
 import { revalidateHome } from './hooks/revalidateHome'
 
 export const Home: GlobalConfig = {
@@ -7,6 +8,7 @@ export const Home: GlobalConfig = {
   label: 'Головна сторінка',
   access: {
     read: () => true,
+    update: authenticated,
   },
   admin: {
     description: 'Всі тексти головної сторінки сайту (endesign.com.ua).',

@@ -80,6 +80,9 @@ export default buildConfig({
   },
   collections: [Pages, Posts, Services, CaseStudies, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
+  // Explicit rather than relying on the implicit default derived from `cors` —
+  // same single-origin allowlist, stated plainly for defense-in-depth.
+  csrf: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer, SiteSettings, Team, Home],
   plugins,
   secret: process.env.PAYLOAD_SECRET,

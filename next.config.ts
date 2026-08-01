@@ -49,6 +49,70 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(dirname),
   },
+  experimental: {
+    // Next 16's proxy.ts (middleware) caps request bodies at 10mb by default
+    // for any request it sees — including Payload's own /api/media uploads,
+    // since proxy.ts runs globally. Without this, uploading anything past
+    // 10mb (e.g. the hero video) truncates the multipart body mid-upload
+    // ("Unexpected end of form"). Raised to comfortably cover large source
+    // video files; nginx's own client_max_body_size on the production server
+    // must be >= this value too, or it'll reject the request before Next
+    // ever sees it.
+    proxyClientMaxBodySize: '500mb',
+  },
+  async headers() {
+    // Safe everywhere, including /admin and /api — none of these interfere
+    // with Payload's admin bundle or REST/GraphQL responses.
+    const baseHeaders = [
+      { key: 'X-Content-Type-Options', value: 'nosniff' },
+      { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+      { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      {
+        key: 'Permissions-Policy',
+        value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+      },
+      {
+        key: 'Strict-Transport-Security',
+        value: 'max-age=63072000; includeSubDomains; preload',
+      },
+    ]
+
+    // CSP is scoped to the public frontend only: Payload's admin bundle isn't
+    // ours to tune (inline scripts/styles it needs aren't fully known), so a
+    // site-wide policy risks breaking the CMS editors use daily. `unsafe-inline`
+    // on script/style is a deliberate trade-off here rather than a nonce-based
+    // policy, since Next's App Router hydration relies on inline scripts that
+    // a strict script-src would need per-request nonces (a bigger, separately
+    // testable change) to allow.
+    const frontendCsp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: blob:",
+      "font-src 'self' data:",
+      "media-src 'self'",
+      "connect-src 'self'",
+      "frame-ancestors 'self'",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+    ].join('; ')
+
+    return [
+      {
+        source: '/((?!admin|api).*)',
+        headers: [...baseHeaders, { key: 'Content-Security-Policy', value: frontendCsp }],
+      },
+      {
+        source: '/admin/:path*',
+        headers: baseHeaders,
+      },
+      {
+        source: '/api/:path*',
+        headers: baseHeaders,
+      },
+    ]
+  },
 }
 
 export default withPayload(nextConfig, { devBundleServerPackages: false })

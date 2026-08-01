@@ -1,5 +1,6 @@
 import type { GlobalConfig } from 'payload'
 
+import { authenticated } from '@/access/authenticated'
 import { revalidateTeam } from './hooks/revalidateTeam'
 
 export const Team: GlobalConfig = {
@@ -7,6 +8,7 @@ export const Team: GlobalConfig = {
   label: 'Team',
   access: {
     read: () => true,
+    update: authenticated,
   },
   fields: [
     {
