@@ -226,6 +226,14 @@
   }
 }
 
+html,
+body {
+  /* Safety net: no section on this site should ever need page-level
+     horizontal scroll — any stray overflow (e.g. a wide flex row) gets
+     clipped here instead of widening the whole page. */
+  overflow-x: hidden;
+}
+
 html {
   opacity: 0;
 }

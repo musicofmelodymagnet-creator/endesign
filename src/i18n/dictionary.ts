@@ -261,5 +261,7 @@ export const dictionary = {
 } as const
 
 export function getDictionary(locale: Locale): Dictionary {
-  return dictionary[locale]
+  // `dictionary` is declared `as const` so each locale keeps its own literal
+  // string types (nice for autocomplete); widen back to the shared shape here.
+  return dictionary[locale] as Dictionary
 }

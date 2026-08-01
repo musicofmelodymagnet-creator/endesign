@@ -71,7 +71,7 @@ export default async function CaseStudyPage({ params: paramsPromise }: Args) {
       </div>
 
       {hasLayout ? (
-        <RenderBlocks blocks={layout} />
+        <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} />
       ) : (
         <div className="container mt-4 mb-16">
           <p className="text-muted-foreground border-border/60 bg-card max-w-xl rounded-2xl border p-6 text-sm">

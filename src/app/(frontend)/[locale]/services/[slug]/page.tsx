@@ -90,7 +90,7 @@ export default async function ServicePage({ params: paramsPromise }: Args) {
         </div>
       )}
 
-      <RenderBlocks blocks={layout} />
+      <RenderBlocks blocks={layout as unknown as Record<string, unknown>[]} />
 
       {children && children.docs.length > 0 && (
         <div className="container mt-16">

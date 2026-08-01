@@ -99,7 +99,7 @@ export const LogoMarquee: React.FC<{ items: Item[]; locale: string; hrefBase: st
   return (
     <div
       ref={trackRef}
-      className="logo-marquee-track scrollbar-hide flex cursor-grab overflow-x-auto active:cursor-grabbing"
+      className="logo-marquee-track scrollbar-hide flex w-full max-w-full cursor-grab overflow-x-auto active:cursor-grabbing"
       onPointerEnter={pause}
       onPointerLeave={() => {
         if (!draggingRef.current) scheduleResume()
