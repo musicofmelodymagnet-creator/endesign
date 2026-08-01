@@ -2,7 +2,6 @@ import type { Config } from 'src/payload-types'
 
 import configPromise from '@payload-config'
 import { type DataFromGlobalSlug, getPayload } from 'payload'
-import { unstable_cache } from 'next/cache'
 
 type Global = keyof Config['globals']
 
@@ -23,12 +22,17 @@ async function getGlobal<T extends Global>(
   return global
 }
 
-/**
- * Returns a unstable_cache function mapped with the cache tag for the slug.
- * `locale` must be part of the cache key — otherwise the first-resolved locale's
- * result would be reused for every other locale (localized fields would leak or vanish).
- */
-export const getCachedGlobal = <T extends Global>(slug: T, depth = 0, locale?: string) =>
-  unstable_cache(async () => getGlobal<T>(slug, depth, locale), [slug, locale || 'default'], {
-    tags: [`global_${slug}`],
-  })
+// Was previously wrapped in unstable_cache, keyed by [slug, locale]. In
+// production that produced a real bug: this data cache and the page-level
+// `revalidate` ISR cache (set on every page that calls this) are two
+// independent caching layers that can fall out of sync, and once one
+// locale's entry got a bad read (observed after an out-of-process DB write —
+// a migration script run with `disableRevalidate: true`, which by design
+// skips the revalidateTag() calls this cache depends on to self-heal), it
+// kept serving that same wrong value indefinitely — a full container restart
+// was the only way to clear it. Globals change rarely and this call is cheap
+// enough to just run directly; the page-level `revalidate` already provides
+// the caching benefit that mattered.
+export const getCachedGlobal = <T extends Global>(slug: T, depth = 0, locale?: string) => {
+  return () => getGlobal<T>(slug, depth, locale)
+}

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { Media } from '@/components/Media'
+import { HeroVideo } from '@/components/HeroVideo'
 import { LogoMarquee } from '@/components/LogoMarquee'
 import { Marquee } from '@/components/Marquee'
 import { TeamSection } from '@/components/TeamSection'
@@ -79,14 +80,10 @@ export default async function HomePage({ params }: Args) {
       >
         {hasVideo ? (
           <>
-            <video
+            <HeroVideo
               className="absolute inset-0 h-full w-full object-cover"
+              poster="/hero-poster.jpg"
               src={typeof heroVideo === 'object' ? (heroVideo?.url ?? undefined) : undefined}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
             />
             <div
               aria-hidden
