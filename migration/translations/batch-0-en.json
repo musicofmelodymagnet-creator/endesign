@@ -1,0 +1,132 @@
+[
+  {
+    "collection": "pages",
+    "id": 2,
+    "title": "Contacts",
+    "hero": {
+      "type": "none",
+      "richText": ""
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "richText": "<p>The \"Contacts\" section will be filled with content during the development of the new design.</p>"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Contacts — EnDesign Design Studio, Kyiv",
+      "description": "Get in touch with EnDesign studio: phone, email, Telegram, Viber, WhatsApp. Located in Kyiv at 11Zh Yevhena Sverstiuka St. Let's discuss your project today."
+    }
+  },
+  {
+    "collection": "pages",
+    "id": 1,
+    "title": "Home",
+    "hero": {
+      "type": "lowImpact",
+      "richText": "<p>The \"Home\" section will be filled with content during the development of the new design.</p>"
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "richText": "<p>The \"Home\" section will be filled with content during the development of the new design.</p>"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "EnDesign — Graphic Design, Web & 3D Studio in Kyiv",
+      "description": "EnDesign design studio in Kyiv: graphic design, website development, 3D visualization. 10+ years of experience, 300+ completed projects. Book a consultation today!"
+    }
+  },
+  {
+    "collection": "services",
+    "id": 61,
+    "title": "Brochure Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Brochure Design | EnDesign",
+      "description": "A well-structured brochure design for a detailed presentation of your products or services. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 60,
+    "title": "Booklet Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Booklet Design | EnDesign",
+      "description": "An informative and stylish booklet design to present your company or product. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 59,
+    "title": "Poster Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Poster Design | EnDesign",
+      "description": "A bold poster design to promote your event or brand. Grabs attention at first glance. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 58,
+    "title": "Postcard Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Postcard Design | EnDesign",
+      "description": "Postcard design for advertising or greetings. Bold, concise, and effective. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 57,
+    "title": "Flyer Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Flyer Design | EnDesign",
+      "description": "A bold flyer design to promote your deals and events. Effective delivery of information. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 56,
+    "title": "Citylight Layouts",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Citylight Layout Design | EnDesign",
+      "description": "Citylight layout design: compact and effective outdoor advertising for the city. EnDesign studio, Kyiv."
+    }
+  }
+]

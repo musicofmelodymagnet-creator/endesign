@@ -1,0 +1,34 @@
+import type { Config } from 'src/payload-types'
+
+import configPromise from '@payload-config'
+import { type DataFromGlobalSlug, getPayload } from 'payload'
+import { unstable_cache } from 'next/cache'
+
+type Global = keyof Config['globals']
+
+async function getGlobal<T extends Global>(
+  slug: T,
+  depth = 0,
+  locale?: string,
+): Promise<DataFromGlobalSlug<T>> {
+  const payload = await getPayload({ config: configPromise })
+
+  const global = await payload.findGlobal({
+    slug,
+    depth,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    locale: locale as any,
+  })
+
+  return global
+}
+
+/**
+ * Returns a unstable_cache function mapped with the cache tag for the slug.
+ * `locale` must be part of the cache key — otherwise the first-resolved locale's
+ * result would be reused for every other locale (localized fields would leak or vanish).
+ */
+export const getCachedGlobal = <T extends Global>(slug: T, depth = 0, locale?: string) =>
+  unstable_cache(async () => getGlobal<T>(slug, depth, locale), [slug, locale || 'default'], {
+    tags: [`global_${slug}`],
+  })

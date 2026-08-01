@@ -1,0 +1,621 @@
+[
+  {
+    "collection": "services",
+    "id": 23,
+    "title": "3D Object Modeling",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>See how your object will look before it's even built</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects We've Created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Why Is 3D Object Modeling Important?",
+        "richText": "<p> This isn't just visualization — it's a way to save time and money, and to win over your audience.</p>\n<h2>An Image Without Blueprints</h2>\n<p>A digital model makes it easier to understand the concept:</p>\n<ul><li>3D modeling shows the object in its natural appearance</li><li>reveals flaws before the production stage</li><li>simplifies presentation and approval at every stage</li></ul>\n<h2>Confidence for Investors and Clients</h2>\n<p>An accurate model is a convincing argument:</p>\n<ul><li>clear presentation of ideas during pitches</li><li>convenient formats for brochures, websites, and tender documents</li><li>preliminary check of technical parameters</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How We Create 3D Object Models",
+        "subtitle": "From the first sketch to a precise digital result:",
+        "items": [
+          {
+            "title": "Gathering requirements, briefs, and references",
+            "text": ""
+          },
+          {
+            "title": "Building the base 3D model",
+            "text": ""
+          },
+          {
+            "title": "50% prepayment — the process begins",
+            "text": ""
+          },
+          {
+            "title": "Approving details, style, and materials",
+            "text": ""
+          },
+          {
+            "title": "Working on textures, shadows, and environment",
+            "text": ""
+          },
+          {
+            "title": "Working on textures, shadows, and environment",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What Else We Can Do For You",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why Choose Us?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "High Precision and Realism",
+            "text": "Our 3D modeling accounts for every technical detail to match client expectations as closely as possible."
+          },
+          {
+            "title": "Deep Understanding of Different Industries",
+            "text": "We work with architecture, interiors, equipment, and products — and understand the specifics of each field."
+          },
+          {
+            "title": "Flexible Approach and Efficiency",
+            "text": "We work quickly and precisely. You get the result within the agreed timeframe."
+          },
+          {
+            "title": "Ready-to-Use Materials",
+            "text": "Our files are ready for print, web, VR/AR, and presentations — no extra work needed."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "Need Professional 3D Modeling for Your Object?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "We're ready to bring any concept to life in digital form.",
+            "text": ""
+          },
+          {
+            "title": "Your reliable visualization partner. We work systematically — and think several steps ahead.",
+            "text": ""
+          },
+          {
+            "title": "Support after delivery. We're always in touch — ready to make changes or adapt to other formats.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Custom 3D Object Modeling | EnDesign",
+      "description": "3D modeling of any object: a realistic three-dimensional visualization of your idea for presentations or production. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 22,
+    "title": "Social Media Advertising",
+    "hero": {
+      "type": "none",
+      "richText": ""
+    },
+    "layout": [],
+    "meta": {
+      "title": "Social Media Advertising",
+      "description": ""
+    }
+  },
+  {
+    "collection": "services",
+    "id": 21,
+    "title": "Contextual Advertising",
+    "hero": {
+      "type": "none",
+      "richText": ""
+    },
+    "layout": [],
+    "meta": {
+      "title": "Contextual Advertising",
+      "description": ""
+    }
+  },
+  {
+    "collection": "services",
+    "id": 20,
+    "title": "Website Maintenance",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>Keep your website running smoothly and up to date every day</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects We've Created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Why Does Your Website Need Maintenance?",
+        "richText": "<p>Your website is like a living organism that needs constant care to remain an effective tool for sales or communication.</p>\n<h2>Protection and Stability</h2>\n<p>Timely updates prevent hacks and data loss:</p>\n<ul><li>regular backups and recovery in case of failures</li><li>updates to the CMS core, themes, and modules</li><li>identifying and fixing vulnerabilities</li></ul>\n<h2>Fresh Content</h2>\n<p>Your website looks \"alive\" and builds trust when the information on it is current:</p>\n<ul><li>adding new pages, updating texts</li><li>keeping contacts, prices, and services up to date</li><li>publishing news, promotions, and case studies</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How We Maintain Your Website",
+        "subtitle": "A step-by-step system of collaboration that guarantees quality results:",
+        "items": [
+          {
+            "title": "Analyzing the technical condition of the resource",
+            "text": ""
+          },
+          {
+            "title": "Agreeing on the task list and execution schedule",
+            "text": ""
+          },
+          {
+            "title": "Prepayment — and we get started",
+            "text": ""
+          },
+          {
+            "title": "Regular work performed according to plan",
+            "text": ""
+          },
+          {
+            "title": "Maintaining a technical report",
+            "text": ""
+          },
+          {
+            "title": "Checking stability and providing support upon request",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What Else We Can Do For You",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why Choose Us?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Experience and Reliability",
+            "text": "We maintain websites of all complexity levels — from landing pages to large platforms. We know how to prevent problems, not just fix them."
+          },
+          {
+            "title": "Flexible Solutions for Any Business",
+            "text": "We offer website maintenance priced to match your tasks and scale. You never overpay."
+          },
+          {
+            "title": "Control and Transparency",
+            "text": "We report on completed work, stay in touch, and explain our decisions. Everything is transparent."
+          },
+          {
+            "title": "Reliable Website Support",
+            "text": "Always in touch. We respond quickly to requests. We help not only within the scope of the plan — but in difficult situations too."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "Need Quality Support for Your Website?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Leave a request — and we'll take care of the stability, updates, and security of your resource.",
+            "text": ""
+          },
+          {
+            "title": "Your digital partner. We work for results, not just a one-time job.",
+            "text": ""
+          },
+          {
+            "title": "Service after launch. You're never left on your own — we're always by your side.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Website Technical Maintenance | EnDesign",
+      "description": "Website support and maintenance: reliable care that keeps your resource running smoothly. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 19,
+    "title": "Landing Page",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>Maximum effectiveness on a single page</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects We've Created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Want a one-page website built for your business? Fill out the brief — and we'll deliver an effective, responsive, high-converting landing page.",
+        "richText": "<h2>Why You Need a One-Page Website for Sales</h2>\n<p>This is a modern website format that focuses the visitor's attention on a single goal — placing an order.</p>\n<h3>Sells at First Glance</h3>\n<p>A landing page works like an online presentation of your product:</p>\n<ul><li>clear focus on the offer</li><li>convenient structure</li><li>instant customer action</li></ul>\n<h3>High Conversion</h3>\n<p>Building a landing page is a tool for quickly attracting customers:</p>\n<ul><li>an attention-grabbing headline</li><li>a call to action</li><li>an intuitive interface</li></ul>\n<h3>Simplicity and Speed</h3>\n<p>A one-page website costs less, and launches much faster compared to multi-page projects:</p>\n<ul><li>an efficient structure</li><li>fast loading</li><li>convenience for mobile users</li></ul>\n<h3>Design That Works</h3>\n<p>Building a one-page website means a responsive, stylish, and on-brand approach:</p>\n<ul><li>brand colors and style</li><li>clear visual hierarchy</li><li>a UX-friendly approach</li></ul>\n<h3>Optimized for Advertising</h3>\n<p>Landing page development provides the perfect platform for ad campaigns:</p>\n<ul><li>SEO setup</li><li>analytics integration</li><li>CRM integration</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How Landing Page Development Works. Our Approach",
+        "subtitle": "Our team brings the project from idea to launch — taking all your business needs into account:",
+        "items": [
+          {
+            "title": "Research — analyzing the target audience, product, and market",
+            "text": ""
+          },
+          {
+            "title": "Strategy — shaping the logic of how information is presented",
+            "text": ""
+          },
+          {
+            "title": "Prepayment — 50% before the start",
+            "text": ""
+          },
+          {
+            "title": "Design — creating the visual part of the landing page",
+            "text": ""
+          },
+          {
+            "title": "Approval — making revisions based on your feedback",
+            "text": ""
+          },
+          {
+            "title": "Release — launching the finished one-page sales website",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What Else We Can Do For You",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why Order a Landing Page From Us",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Custom Concepts",
+            "text": "We offer several design options to choose from — you pick the best solution."
+          },
+          {
+            "title": "Understanding of the Target Audience",
+            "text": "We don't just build a landing page — we tailor it to your customers"
+          },
+          {
+            "title": "On-Time Delivery",
+            "text": "The project moves fast. Clear deadlines — clear results."
+          },
+          {
+            "title": "Affordable Landing Page Pricing",
+            "text": "You know exactly what you're paying for — no hidden costs."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "Want a Landing Page That Actually Works?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Fill out a short request — and we'll find the best landing page format for your business.",
+            "text": ""
+          },
+          {
+            "title": "Long-term collaboration. We're ready to update your one-page website as your business grows.",
+            "text": ""
+          },
+          {
+            "title": "Consultations after launch. We're always in touch — to keep your landing page effective.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Custom Landing Page Development | EnDesign",
+      "description": "Landing page creation: the perfect solution for selling a product or service. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 18,
+    "title": "Online Store",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>Sell online without limits or geographic boundaries</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects We've Created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Why Is Online Store Development a Smart Investment?",
+        "richText": "<p>This isn't just a website — it's a tool for steady profit that works regardless of your physical presence.</p>\n<h2>Full Control Over the Sales Process</h2>\n<p>Online sales become effective when you manage everything from a single dashboard:</p>\n<ul><li>real-time order processing and monitoring</li><li>automatic inventory updates</li><li>setting up promotions, promo codes, and delivery options</li></ul>\n<h2>Convenience for the Buyer</h2>\n<p>The easier it is to make a purchase, the higher the conversion:</p>\n<ul><li>fast search, sorting, and filtering by parameters</li><li>convenient checkout in just a few clicks</li><li>mobile support, with no glitches on any device</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How We Build an Online Store",
+        "subtitle": " A step-by-step process that guarantees results and transparent collaboration:",
+        "items": [
+          {
+            "title": "Analyzing the niche, competitors, and product",
+            "text": ""
+          },
+          {
+            "title": "Building the structure, logic, and user scenarios",
+            "text": ""
+          },
+          {
+            "title": "50% prepayment — and we get started",
+            "text": ""
+          },
+          {
+            "title": "Design, prototyping, and layout development",
+            "text": ""
+          },
+          {
+            "title": "Presentation and approval with the client",
+            "text": ""
+          },
+          {
+            "title": "Deployment, testing, and launching the store online",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What Else We Can Do For You",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why Choose Us?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Comprehensive Expertise",
+            "text": "We deeply understand our clients' business processes. Our online store development covers not just design, but usability, sales logic, and marketing tools too. We don't just build a website — we build an effective online store that delivers results."
+          },
+          {
+            "title": "Flexibility and Scalability",
+            "text": "You can expand functionality at any time — from additional modules to full integration with CRM, logistics, or 1C. Our online store development is transparently priced, and our solutions are scalable."
+          },
+          {
+            "title": "Speed and On-Time Delivery",
+            "text": "We strictly stick to deadlines. You know in advance when you'll get the finished result, with no delays or empty promises. Every stage stays under your control."
+          },
+          {
+            "title": "Support After Launch",
+            "text": "We don't abandon clients once the project is delivered. We provide technical support, updates, and consultations. Ordering an online store means gaining a reliable digital partner for the long term."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "Want an Effective Online Store That Generates Profit?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Leave a request — and we'll build you a convenient, functional online sales platform.",
+            "text": ""
+          },
+          {
+            "title": "Your design partner. We don't work one-off — we build digital solutions for your business's long-term growth.",
+            "text": ""
+          },
+          {
+            "title": "Service after launch. We're by your side — even after development is complete. Consultations, support, updates.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Turnkey Online Store Development | EnDesign",
+      "description": "Online store creation: a digital storefront for modern business with a convenient catalog and payment. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 17,
+    "title": "Car Sticker Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>The key to standing out on the road</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects We've Created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Why Does Quality Car Sticker Printing Matter?",
+        "richText": "<p>This isn't just decoration — it's a way to communicate with potential customers.</p>\n<h3>1. Visual Identity</h3>\n<p>The first seconds are decisive. Stylish car stickers help you:</p>\n<ul><li>make a strong first impression</li><li>catch and hold attention</li><li>stand out among identical-looking cars</li></ul>\n<h3>2. Competitive Advantage</h3>\n<p>In a world where advertising is everywhere, car stickers are an effective way to make yourself known.</p>\n<ul><li>highlight your brand's uniqueness</li><li>add character to the vehicle</li><li>make your transport part of your image</li></ul>\n<h3>3. Grabbing Attention</h3>\n<p>Professional car sticker production is a balance between creativity and functionality.</p>\n<ul><li>visual structure</li><li>the right accents</li><li>eye-catching even from a distance</li></ul>\n<h3>4. Building Your Brand</h3>\n<p>Car stickers are mobile advertising that works every day.</p>\n<ul><li>a cohesive color palette</li><li>consistency with your brand identity</li><li>brand recognition in any city</li></ul>\n<h3>5. Flexibility and Adaptation</h3>\n<p>We create stickers for trucks, cars, and corporate vehicles, taking every detail into account.</p>\n<ul><li>adapted to the vehicle's dimensions</li><li>weather resistance</li><li>easy installation and removal</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How We Create Car Stickers. Our Collaboration Process",
+        "subtitle": "We work according to a proven process that guarantees results while keeping your budget in check.",
+        "items": [
+          {
+            "title": "Analyzing the task — vehicle type, application goal, and place of use",
+            "text": ""
+          },
+          {
+            "title": "Style development — sketches and color solutions",
+            "text": ""
+          },
+          {
+            "title": "Prepayment — 50% of the order cost",
+            "text": ""
+          },
+          {
+            "title": "Printing the car stickers — using durable materials",
+            "text": ""
+          },
+          {
+            "title": "Presentation — approving samples",
+            "text": ""
+          },
+          {
+            "title": "Installation — applying to the vehicle or handing over with instructions",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What Else We Can Do For You",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why We're Chosen",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Choice of Style",
+            "text": "We offer several concepts — you choose the best car sticker design for your taste and goals."
+          },
+          {
+            "title": "Creativity and Experience",
+            "text": "We combine trends with practical experience. We know how to make car stickers that actually work.\n"
+          },
+          {
+            "title": "Strict Adherence to Deadlines",
+            "text": "You know exactly when you'll get the result. No delays, no procrastination.\n"
+          },
+          {
+            "title": "Transparent Pricing",
+            "text": "No hidden costs — just a fair price for quality car sticker printing."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "The Main Purpose of Car Stickers:",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Get a design made for you. Send a request — and we'll create stickers for your doors, windows, or a full set.",
+            "text": ""
+          },
+          {
+            "title": "Reliable partnership. We work with businesses and private clients on image and recognition.",
+            "text": ""
+          },
+          {
+            "title": "Support at every stage. We're always here — updating, editing, and improving your car stickers.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Car Sticker Design and Vehicle Branding | EnDesign",
+      "description": "Sticker design and vehicle branding: we create a unique style for advertising on wheels. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 16,
+    "title": "Billboard Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Billboard Layout Design | EnDesign",
+      "description": "Outdoor billboard advertising design: bold, eye-catching, and effective. EnDesign studio, Kyiv."
+    }
+  }
+]

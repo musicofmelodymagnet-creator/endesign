@@ -1,0 +1,31 @@
+build
+dist
+node_modules
+.DS_Store
+.env
+.env.*
+!.env.example
+.next
+next-env.d.ts
+.vercel
+*.tsbuildinfo
+*.log
+
+# Payload default media upload directory
+public/media/
+
+public/robots.txt
+public/sitemap*.xml
+
+# Legacy site database dump used only during one-time migration — not
+# needed to run the app, and may contain old admin password hashes.
+migration/db/*.sql
+migration/db/*.log
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.playwright-mcp/

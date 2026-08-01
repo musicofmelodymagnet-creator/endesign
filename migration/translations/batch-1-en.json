@@ -1,0 +1,312 @@
+[
+  {
+    "collection": "services",
+    "id": 55,
+    "title": "Storefront Window Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Storefront Window Design | EnDesign",
+      "description": "Storefront window design: attract customers before they even step inside. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 54,
+    "title": "Exterior Signage",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Exterior Signage Design | EnDesign",
+      "description": "Signage design for your business: the first thing a customer sees. Bold and memorable. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 53,
+    "title": "Exhibition and Advertising Stands",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Exhibition Stand Design | EnDesign",
+      "description": "Exhibition and advertising stand design: present your business in the best possible light. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 52,
+    "title": "Lightbox Layout Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Lightbox Layout Design | EnDesign",
+      "description": "Lightbox layout design: an advertising structure that grabs attention day and night. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 51,
+    "title": "Business Card Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p>Step into a world of virtual possibilities with our professional web design. We'll create a website for you that not only looks stunning but is also optimized for performance and ease of use</p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Business Card Design in Kyiv | EnDesign",
+      "description": "Stylish, informative business card design for your business. Print and digital formats. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 50,
+    "title": "Banner Layout Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p></p>"
+    },
+    "layout": [],
+    "meta": {
+      "title": "Custom Banner Layout Design | EnDesign",
+      "description": "Advertising banner layout design: bold, eye-catching, and effective for your business. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 49,
+    "title": "Furniture Design",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p> From idea to precise drawing — everything under control</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects we've created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Why order furniture design from us?",
+        "richText": "<p> This isn't just a sketch — it's the foundation of quality manufacturing.</p>\n<h2>Save Time and Resources</h2>\n<p>With a well-thought-out design, you:</p>\n<ul><li>avoid material overspending</li><li>reduce production time</li><li>minimize the risk of technical errors</li></ul>\n<h2>An Individual Approach</h2>\n<p>We create furniture specifically for your space:</p>\n<ul><li>optimized to fit the dimensions of the room</li><li>personal style and functionality</li><li>precise furniture design tailored to your wishes<br><br></li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How we handle furniture design",
+        "subtitle": "From the first idea to production drawings:",
+        "items": [
+          {
+            "title": "Analysis of space, function, and style",
+            "text": ""
+          },
+          {
+            "title": "Agreeing on concept, materials, and mechanisms",
+            "text": ""
+          },
+          {
+            "title": "50% deposit — and design work begins",
+            "text": ""
+          },
+          {
+            "title": "Development of models, drawings, and visualizations",
+            "text": ""
+          },
+          {
+            "title": "Checking technical details",
+            "text": ""
+          },
+          {
+            "title": "Delivery of the finished project in production-ready format",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What else we can do for you",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why choose us?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Experience and Attention to Detail",
+            "text": "We understand the structural logic of manufacturing, so your furniture design will be not only beautiful but also technically precise."
+          },
+          {
+            "title": "Professional Modeling",
+            "text": "We use modern software to create realistic visualizations and technical drawings. Every project is production-ready."
+          },
+          {
+            "title": "Flexibility and Support",
+            "text": "We make changes quickly and help adapt the design for different manufacturing setups or formats. We're with you all the way to the final result."
+          },
+          {
+            "title": "Full Support",
+            "text": "From concept to the last hole for hardware fittings. You get a complete set of drawings, diagrams, and visualizations that are easy for the manufacturer to work with."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "Need precise furniture design that's easy to bring to life?",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Reach out to us, and we'll create not just drawings, but a solid foundation for the perfect result.",
+            "text": ""
+          },
+          {
+            "title": "Your technical designer. We work for results, not templates.",
+            "text": ""
+          },
+          {
+            "title": "Support after delivery. We help with adaptation, changes, and production.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Custom 3D Furniture Design | EnDesign",
+      "description": "Custom 3D furniture design: tailored solutions for every space. EnDesign studio, Kyiv."
+    }
+  },
+  {
+    "collection": "services",
+    "id": 48,
+    "title": "Photo Retouching and Compositing",
+    "hero": {
+      "type": "mediumImpact",
+      "richText": "<p> The key to a striking visual presentation</p>"
+    },
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "Projects we've created",
+        "images": [
+          {
+            "caption": ""
+          },
+          {
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "Need custom editing? Fill out a short brief, and we'll create unique solutions that make your photos stand out from the rest.",
+        "richText": "<h2>Why Does Quality Photo Editing Matter?</h2>\n<p>It's the foundation of visual communication. Photo compositing is what creates mood, style, and emotional impact.</p>\n<h3>1. Visual Appeal</h3>\n<p>A first impression forms in seconds. Quality photo retouching lets you:</p>\n<ul><li>create a positive impression</li><li>hold the viewer's attention</li><li>stand out from amateur photos</li></ul>\n<h3>2. Competitive Advantage</h3>\n<p>In a visual landscape where everyone is competing for attention, photo retouching is a way to look professional.</p>\n<ul><li>highlights individuality</li><li>improves image quality</li><li>adds weight to a brand or personal image</li></ul>\n<h3>3. Audience Engagement</h3>\n<p>Professional photo compositing isn't just about effects — it's a carefully thought-out composition.</p>\n<ul><li>logical image structure</li><li>well-placed accents</li><li>stronger emotional impact</li></ul>\n<h3>4. A Stronger Image</h3>\n<p>Photo styling helps convey your brand's style before anyone even reads the text.</p>\n<ul><li>color harmony</li><li>stylistic consistency</li><li>visual cohesion</li></ul>\n<h3>5. Versatility and Accessibility</h3>\n<p>Modern photo compositing adapts to any format or need.</p>\n<ul><li>optimization for social media</li><li>high-quality print</li><li>quick adaptation across different platforms</li></ul>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "How we handle photo retouching. Stages of our collaboration",
+        "subtitle": "We follow a clear process that guarantees quality and reliable execution.",
+        "items": [
+          {
+            "title": "Photo analysis — goals, style, format",
+            "text": ""
+          },
+          {
+            "title": "Concept — selecting effects and color palette",
+            "text": ""
+          },
+          {
+            "title": "Prepayment — 50% of the order cost",
+            "text": ""
+          },
+          {
+            "title": "Photo compositing — retouching, correction, styling",
+            "text": ""
+          },
+          {
+            "title": "Presentation — approval with the client",
+            "text": ""
+          },
+          {
+            "title": "Delivery — final images provided in a convenient format",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "What else we can do for you",
+        "richText": "<p></p>"
+      },
+      {
+        "blockType": "iconList",
+        "title": "Why choose us",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Variety of Styles",
+            "text": "We offer several options — you'll get different approaches to the same shot."
+          },
+          {
+            "title": "Creativity and Experience",
+            "text": "We combine aesthetics with technique. We know exactly what perfect photo retouching looks like."
+          },
+          {
+            "title": "Reliable Turnaround",
+            "text": "Delivered on schedule. We value your time and always work on time."
+          },
+          {
+            "title": "Fair Pricing",
+            "text": "No hidden costs. You know exactly what you're paying for — quality photo compositing with no surprises."
+          }
+        ]
+      },
+      {
+        "blockType": "iconList",
+        "title": "The main goal of photo retouching:",
+        "subtitle": "",
+        "items": [
+          {
+            "title": "Order custom editing. Fill out the form, and we'll offer a solution tailored to your needs.",
+            "text": ""
+          },
+          {
+            "title": "Your ongoing partner in photo style. We work with brands, agencies, and individual clients to create unique visual content.",
+            "text": ""
+          },
+          {
+            "title": "Professional ongoing support. After the project, we stay with you — advising, updating, and developing your style.",
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "title": "Custom Photo Retouching & Compositing | EnDesign",
+      "description": "Professional photo retouching and compositing: perfect shots for advertising, catalogs, and social media. EnDesign studio, Kyiv."
+    }
+  }
+]

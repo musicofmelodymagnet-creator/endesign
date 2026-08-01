@@ -1,0 +1,117 @@
+[
+  {
+    "collection": "case-studies",
+    "id": 8,
+    "title": "Розробка логотипу для студії енергетика",
+    "layout": [
+      {
+        "blockType": "gallery",
+        "title": "",
+        "images": [
+          {
+            "caption": "Разрабатываем концепцию представления бизнеса на выставках и мероприятиях для                 продвижения компании"
+          },
+          {
+            "caption": "Разрабатываем дизайн упаковки, который станет вашей визитной карточкой и будет вызывать желание покупать ваш продукт"
+          },
+          {
+            "caption": "Создаем рекламу на транспорте для привлечения постоянных клиентов"
+          },
+          {
+            "caption": "Разрабатываем концепцию представления бизнеса на выставках и мероприятиях для                 продвижения компании"
+          },
+          {
+            "caption": "Разрабатываем дизайн упаковки, который станет вашей визитной карточкой и будет вызывать желание покупать ваш продукт"
+          },
+          {
+            "caption": "Создаем рекламу на транспорте для привлечения постоянных клиентов"
+          }
+        ]
+      },
+      {
+        "blockType": "textImage",
+        "title": "",
+        "richText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 1.</p>\n<p>Представить компанию потенциальным клиентам в выгодном свете позволяет графический дизайн, студия услуги такой категории предоставляет по заранее утвержденному и согласованному плану, а также после утверждения сроков и бюджета. Если над визуальным оформлением вашего проекта будет работать графический дизайнер, сайт компании начнет работать более эффективно. К тому же, применить инструменты графического дизайна можно не только в веб пространстве, но и для:</p>\n<ul><li>создания объектов наружной рекламы;</li><li>раздаточных материалов;</li><li>нанесения на корпоративный транспорт;</li><li>изготовления футболок, чашек, ручек и прочей корпоративной продукции в фирменном стиле;</li><li>оформления сильных логотипов;</li><li>создания упаковки для любых товаров.</li></ul>\n<p>Графический и веб дизайн в студии – услуги, которые помогают выгодно выделиться на рынке, привлечь внимание к своему бренду и продукции, стать легко узнаваемыми даже в нише с высокой конкуренцией.</p>"
+      },
+      {
+        "blockType": "textImage",
+        "title": "Що ще ми можемо для вас зробити",
+        "richText": "<p></p>"
+      }
+    ],
+    "meta": {
+      "title": "Приклад роботи: логотип для студії Енергетика | EnDesign",
+      "description": "Кейс розробки логотипу для студії Енергетика — приклад роботи студії дизайну EnDesign, Київ."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 7,
+    "title": "Fure",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Fure — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для меблевого виробництва Fure — приклад реалізованої роботи студії EnDesign."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 6,
+    "title": "2Ski",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: 2Ski — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для спортивного клубу 2Ski — приклад реалізованої роботи студії EnDesign, Київ."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 5,
+    "title": "Big Pro Am",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Big Pro Am — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для танцювальної студії Big Pro Am — приклад реалізованої роботи студії EnDesign."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 4,
+    "title": "Landscape solution 1",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Landscape Solution — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для компанії Landscape Solution (ландшафтний дизайн) — приклад роботи студії EnDesign."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 3,
+    "title": "Yes fx",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Yes fx — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для продакшн-студії Yes fx — приклад реалізованої роботи студії EnDesign, Київ."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 2,
+    "title": "Елеон Україна",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Елеон Україна — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для благодійного фонду Елеон Україна — приклад реалізованої роботи студії EnDesign."
+    }
+  },
+  {
+    "collection": "case-studies",
+    "id": 1,
+    "title": "Golden Time",
+    "layout": [],
+    "meta": {
+      "title": "Кейс: Golden Time — приклад роботи EnDesign",
+      "description": "Дизайн-проєкт для компанії Golden Time — приклад реалізованої роботи студії EnDesign, Київ."
+    }
+  }
+]
