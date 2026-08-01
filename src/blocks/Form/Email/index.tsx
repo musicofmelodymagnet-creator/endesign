@@ -7,13 +7,19 @@ import React from 'react'
 
 import { Error } from '../Error'
 import { Width } from '../Width'
+import { getDictionary } from '@/i18n/dictionary'
+import type { Locale } from '@/i18n/config'
 
 export const Email: React.FC<
   EmailField & {
     errors: Partial<FieldErrorsImpl>
     register: UseFormRegister<FieldValues>
+    locale?: Locale
   }
-> = ({ name, defaultValue, errors, label, register, required, width }) => {
+> = ({ name, defaultValue, errors, label, register, required, width, locale = 'uk' }) => {
+  const hasError = Boolean(errors[name])
+  const t = getDictionary(locale)
+
   return (
     <Width width={width}>
       <Label htmlFor={name}>
@@ -26,13 +32,17 @@ export const Email: React.FC<
         )}
       </Label>
       <Input
+        aria-invalid={hasError}
         defaultValue={defaultValue}
         id={name}
         type="text"
-        {...register(name, { pattern: /^\S[^\s@]*@\S+$/, required })}
+        {...register(name, {
+          pattern: { value: /^\S[^\s@]*@\S+$/, message: t.form.invalidEmail },
+          required,
+        })}
       />
 
-      {errors[name] && <Error name={name} />}
+      {hasError && <Error locale={locale} name={name} />}
     </Width>
   )
 }

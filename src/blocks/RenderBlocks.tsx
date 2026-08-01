@@ -8,6 +8,7 @@ import { GalleryBlock } from '@/blocks/Gallery/Component'
 import { IconListBlock } from '@/blocks/IconList/Component'
 import { TextImageBlock } from '@/blocks/TextImage/Component'
 import { PriceListBlock } from '@/blocks/PriceList/Component'
+import type { Locale } from '@/i18n/config'
 
 const blockComponents = {
   content: ContentBlock,
@@ -24,8 +25,9 @@ export const RenderBlocks: React.FC<{
   // Reused across Pages/Services/CaseStudies, each with its own block union —
   // kept loose here since every block already validates itself at render time.
   blocks: Record<string, unknown>[] | null | undefined
+  locale?: Locale
 }> = (props) => {
-  const { blocks } = props
+  const { blocks, locale } = props
 
   const hasBlocks = blocks && Array.isArray(blocks) && blocks.length > 0
 
@@ -42,7 +44,7 @@ export const RenderBlocks: React.FC<{
               return (
                 <div className="my-16" key={index}>
                   {/* @ts-expect-error there may be some mismatch between the expected types here */}
-                  <Block {...block} disableInnerContainer />
+                  <Block {...block} disableInnerContainer locale={locale} />
                 </div>
               )
             }

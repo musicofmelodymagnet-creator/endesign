@@ -7,13 +7,17 @@ import React from 'react'
 
 import { Error } from '../Error'
 import { Width } from '../Width'
+import type { Locale } from '@/i18n/config'
 
 export const Text: React.FC<
   TextField & {
     errors: Partial<FieldErrorsImpl>
     register: UseFormRegister<FieldValues>
+    locale?: Locale
   }
-> = ({ name, defaultValue, errors, label, register, required, width }) => {
+> = ({ name, defaultValue, errors, label, register, required, width, locale }) => {
+  const hasError = Boolean(errors[name])
+
   return (
     <Width width={width}>
       <Label htmlFor={name}>
@@ -25,8 +29,14 @@ export const Text: React.FC<
           </span>
         )}
       </Label>
-      <Input defaultValue={defaultValue} id={name} type="text" {...register(name, { required })} />
-      {errors[name] && <Error name={name} />}
+      <Input
+        aria-invalid={hasError}
+        defaultValue={defaultValue}
+        id={name}
+        type="text"
+        {...register(name, { required })}
+      />
+      {hasError && <Error locale={locale} name={name} />}
     </Width>
   )
 }

@@ -2014,17 +2014,22 @@ export interface Footer {
   createdAt?: string | null;
 }
 /**
+ * Контакти, відео на головній та SEO за замовчуванням — використовується по всьому сайту.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "site-settings".
  */
 export interface SiteSetting {
   id: number;
+  /**
+   * Показуються в шапці, футері та на сторінці контактів.
+   */
   contactPhones?:
     | {
         label?: string | null;
         phone: string;
         /**
-         * Shows the carrier logo next to this number (Ukrainian mobile operators).
+         * Показує логотип оператора біля цього номера.
          */
         carrier?: ('lifecell' | 'kyivstar' | 'vodafone' | 'none') | null;
         id?: string | null;
@@ -2032,14 +2037,20 @@ export interface SiteSetting {
     | null;
   email?: string | null;
   /**
-   * Physical office address shown in the footer and contact page.
+   * Показується у футері та на сторінці контактів.
    */
   address?: string | null;
   telegram?: string | null;
   viber?: string | null;
   whatsapp?: string | null;
+  /**
+   * Фонове відео у верхньому блоці головної сторінки. Якщо не завантажено — показується звичайний фон без відео.
+   */
   homeHeroVideo?: (number | null) | Media;
   homeSvgIcon?: (number | null) | Media;
+  /**
+   * Використовується, якщо на конкретній сторінці не задано власний SEO-заголовок/опис/картинку.
+   */
   defaultSeo?: {
     title?: string | null;
     description?: string | null;

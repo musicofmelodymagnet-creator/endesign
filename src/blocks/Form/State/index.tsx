@@ -15,13 +15,17 @@ import { Controller } from 'react-hook-form'
 import { Error } from '../Error'
 import { Width } from '../Width'
 import { stateOptions } from './options'
+import type { Locale } from '@/i18n/config'
 
 export const State: React.FC<
   StateField & {
     control: Control
     errors: Partial<FieldErrorsImpl>
+    locale?: Locale
   }
-> = ({ name, control, errors, label, required, width }) => {
+> = ({ name, control, errors, label, required, width, locale }) => {
+  const hasError = Boolean(errors[name])
+
   return (
     <Width width={width}>
       <Label htmlFor={name}>
@@ -41,7 +45,7 @@ export const State: React.FC<
 
           return (
             <Select onValueChange={(val) => onChange(val)} value={controlledValue?.value}>
-              <SelectTrigger className="w-full" id={name}>
+              <SelectTrigger aria-invalid={hasError} className="w-full" id={name}>
                 <SelectValue placeholder={label} />
               </SelectTrigger>
               <SelectContent>
@@ -58,7 +62,7 @@ export const State: React.FC<
         }}
         rules={{ required }}
       />
-      {errors[name] && <Error name={name} />}
+      {hasError && <Error locale={locale} name={name} />}
     </Width>
   )
 }

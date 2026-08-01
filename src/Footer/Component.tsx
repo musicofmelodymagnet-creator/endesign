@@ -126,6 +126,9 @@ export async function Footer({ locale }: { locale: Locale }) {
         <span>
           © {year} EnDesign. {t.footer.rights}
         </span>
+        <Link href={`/${locale}/polityka-konfidentsiynosti`} className="link-underline opacity-90">
+          {t.footer.privacyPolicy}
+        </Link>
         <span>{t.footer.madeIn}</span>
       </div>
     </footer>

@@ -1,39 +1,51 @@
 import type { GlobalConfig } from 'payload'
 
+import { authenticated } from '@/access/authenticated'
 import { revalidateSiteSettings } from './hooks/revalidateSiteSettings'
 
 export const SiteSettings: GlobalConfig = {
   slug: 'site-settings',
-  label: 'Site Settings',
+  label: 'Налаштування сайту',
   access: {
     read: () => true,
+    update: authenticated,
+  },
+  admin: {
+    description: 'Контакти, відео на головній та SEO за замовчуванням — використовується по всьому сайту.',
   },
   fields: [
     {
       name: 'contactPhones',
       type: 'array',
+      label: 'Телефони',
       maxRows: 3,
+      admin: {
+        description: 'Показуються в шапці, футері та на сторінці контактів.',
+      },
       fields: [
         {
           name: 'label',
           type: 'text',
+          label: 'Підпис (напр. "Відділ продажів")',
         },
         {
           name: 'phone',
           type: 'text',
+          label: 'Номер телефону',
           required: true,
         },
         {
           name: 'carrier',
           type: 'select',
+          label: 'Оператор',
           admin: {
-            description: 'Shows the carrier logo next to this number (Ukrainian mobile operators).',
+            description: 'Показує логотип оператора біля цього номера.',
           },
           options: [
             { label: 'Lifecell', value: 'lifecell' },
             { label: 'Kyivstar', value: 'kyivstar' },
             { label: 'Vodafone', value: 'vodafone' },
-            { label: 'None', value: 'none' },
+            { label: 'Не показувати', value: 'none' },
           ],
         },
       ],
@@ -41,13 +53,15 @@ export const SiteSettings: GlobalConfig = {
     {
       name: 'email',
       type: 'text',
+      label: 'Email',
     },
     {
       name: 'address',
       type: 'text',
       localized: true,
+      label: 'Адреса офісу',
       admin: {
-        description: 'Physical office address shown in the footer and contact page.',
+        description: 'Показується у футері та на сторінці контактів.',
       },
     },
     {
@@ -56,14 +70,17 @@ export const SiteSettings: GlobalConfig = {
         {
           name: 'telegram',
           type: 'text',
+          label: 'Telegram',
         },
         {
           name: 'viber',
           type: 'text',
+          label: 'Viber',
         },
         {
           name: 'whatsapp',
           type: 'text',
+          label: 'WhatsApp',
         },
       ],
     },
@@ -71,30 +88,44 @@ export const SiteSettings: GlobalConfig = {
       name: 'homeHeroVideo',
       type: 'upload',
       relationTo: 'media',
+      label: 'Відео на головній (хіро)',
+      admin: {
+        description:
+          'Фонове відео у верхньому блоці головної сторінки. Якщо не завантажено — показується звичайний фон без відео.',
+      },
     },
     {
       name: 'homeSvgIcon',
       type: 'upload',
       relationTo: 'media',
+      label: 'SVG-іконка на головній',
     },
     {
       name: 'defaultSeo',
       type: 'group',
+      label: 'SEO за замовчуванням',
+      admin: {
+        description:
+          'Використовується, якщо на конкретній сторінці не задано власний SEO-заголовок/опис/картинку.',
+      },
       fields: [
         {
           name: 'title',
           type: 'text',
           localized: true,
+          label: 'Заголовок (title)',
         },
         {
           name: 'description',
           type: 'textarea',
           localized: true,
+          label: 'Опис (description)',
         },
         {
           name: 'image',
           type: 'upload',
           relationTo: 'media',
+          label: 'Картинка для соцмереж (OG-зображення)',
         },
       ],
     },

@@ -6,8 +6,9 @@ import React, { useEffect } from 'react'
 
 import { FormBlock } from '@/blocks/Form/Component'
 import { useBrief } from '@/providers/Brief'
+import type { Locale } from '@/i18n/config'
 
-export const BriefModal: React.FC<{ form: FormType | null }> = ({ form }) => {
+export const BriefModal: React.FC<{ form: FormType | null; locale?: Locale }> = ({ form, locale }) => {
   const { isOpen, close } = useBrief()
 
   useEffect(() => {
@@ -46,7 +47,7 @@ export const BriefModal: React.FC<{ form: FormType | null }> = ({ form }) => {
             <X className="h-5 w-5" />
           </button>
           <div className="py-6">
-            <FormBlock form={form} enableIntro={false} />
+            <FormBlock form={form} enableIntro={false} locale={locale} />
           </div>
         </div>
       </div>

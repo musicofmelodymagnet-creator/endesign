@@ -10,6 +10,7 @@ import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 import { Reveal } from '@/components/Reveal'
 import { fields } from './fields'
 import { getClientSideURL } from '@/utilities/getURL'
+import type { Locale } from '@/i18n/config'
 
 export type FormBlockType = {
   blockName?: string
@@ -17,6 +18,7 @@ export type FormBlockType = {
   enableIntro: boolean
   form: FormType
   introContent?: DefaultTypedEditorState
+  locale?: Locale
 }
 
 export const FormBlock: React.FC<
@@ -29,6 +31,7 @@ export const FormBlock: React.FC<
     form: formFromProps,
     form: { id: formID, confirmationMessage, confirmationType, redirect, submitButtonLabel } = {},
     introContent,
+    locale,
   } = props
 
   const formMethods = useForm({
@@ -147,6 +150,7 @@ export const FormBlock: React.FC<
                               {...formMethods}
                               control={control}
                               errors={errors}
+                              locale={locale}
                               register={register}
                             />
                           </div>

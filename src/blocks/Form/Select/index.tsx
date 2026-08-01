@@ -14,13 +14,17 @@ import { Controller } from 'react-hook-form'
 
 import { Error } from '../Error'
 import { Width } from '../Width'
+import type { Locale } from '@/i18n/config'
 
 export const Select: React.FC<
   SelectField & {
     control: Control
     errors: Partial<FieldErrorsImpl>
+    locale?: Locale
   }
-> = ({ name, control, errors, label, options, required, width, defaultValue }) => {
+> = ({ name, control, errors, label, options, required, width, defaultValue, locale }) => {
+  const hasError = Boolean(errors[name])
+
   return (
     <Width width={width}>
       <Label htmlFor={name}>
@@ -40,7 +44,7 @@ export const Select: React.FC<
 
           return (
             <SelectComponent onValueChange={(val) => onChange(val)} value={controlledValue?.value}>
-              <SelectTrigger className="w-full" id={name}>
+              <SelectTrigger aria-invalid={hasError} className="w-full" id={name}>
                 <SelectValue placeholder={label} />
               </SelectTrigger>
               <SelectContent>
@@ -57,7 +61,7 @@ export const Select: React.FC<
         }}
         rules={{ required }}
       />
-      {errors[name] && <Error name={name} />}
+      {hasError && <Error locale={locale} name={name} />}
     </Width>
   )
 }

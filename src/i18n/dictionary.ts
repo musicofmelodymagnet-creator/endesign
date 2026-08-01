@@ -15,6 +15,7 @@ export const dictionary = {
       tagline: 'Студія графічного дизайну, розробки сайтів та 3D-візуалізації у Києві.',
       rights: 'Усі права захищені.',
       madeIn: 'Зроблено з ☕ у Києві',
+      privacyPolicy: 'Політика конфіденційності',
     },
     home: {
       badge: 'Студія графічного дизайну · Київ',
@@ -87,6 +88,10 @@ export const dictionary = {
       briefButton: 'Заповнити бриф',
       tagline: 'Студія графічного дизайну, розробки сайтів та 3D-візуалізації у Києві.',
     },
+    form: {
+      required: "Це поле обов'язкове",
+      invalidEmail: 'Введіть коректний email',
+    },
   },
   ru: {
     nav: { services: 'Услуги', portfolio: 'Портфолио', contacts: 'Контакты', cta: 'Обсудить проект' },
@@ -100,6 +105,7 @@ export const dictionary = {
       tagline: 'Студия графического дизайна, разработки сайтов и 3D-визуализации в Киеве.',
       rights: 'Все права защищены.',
       madeIn: 'Сделано с ☕ в Киеве',
+      privacyPolicy: 'Политика конфиденциальности',
     },
     home: {
       badge: 'Студия графического дизайна · Киев',
@@ -172,6 +178,10 @@ export const dictionary = {
       briefButton: 'Заполнить бриф',
       tagline: 'Студия графического дизайна, разработки сайтов и 3D-визуализации в Киеве.',
     },
+    form: {
+      required: 'Это поле обязательно',
+      invalidEmail: 'Введите корректный email',
+    },
   },
   en: {
     nav: { services: 'Services', portfolio: 'Portfolio', contacts: 'Contact', cta: 'Start a project' },
@@ -185,6 +195,7 @@ export const dictionary = {
       tagline: 'A graphic design, web development and 3D visualization studio based in Kyiv.',
       rights: 'All rights reserved.',
       madeIn: 'Made with ☕ in Kyiv',
+      privacyPolicy: 'Privacy Policy',
     },
     home: {
       badge: 'Graphic design studio · Kyiv',
@@ -256,6 +267,10 @@ export const dictionary = {
       messengersHeading: 'Messengers',
       briefButton: 'Fill out the brief',
       tagline: 'A graphic design, web development and 3D visualization studio based in Kyiv.',
+    },
+    form: {
+      required: 'This field is required',
+      invalidEmail: 'Please enter a valid email',
     },
   },
 } as const
