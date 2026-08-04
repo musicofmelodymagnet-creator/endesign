@@ -4,7 +4,13 @@ export type Dictionary = typeof dictionary.uk
 
 export const dictionary = {
   uk: {
-    nav: { services: 'Послуги', portfolio: 'Портфоліо', contacts: 'Контакти', cta: 'Обговорити проєкт' },
+    nav: {
+      services: 'Послуги',
+      portfolio: 'Портфоліо',
+      reviews: 'Відгуки',
+      contacts: 'Контакти',
+      cta: 'Обговорити проєкт',
+    },
     footer: {
       servicesHeading: 'Послуги',
       allServices: 'Усі послуги',
@@ -24,7 +30,13 @@ export const dictionary = {
         'EnDesign — команда графічних дизайнерів, веброзробників та 3D-художників. Перетворюємо ваш бізнес на впізнаваний бренд: від логотипу до готового сайту.',
       ctaDiscuss: 'Обговорити проєкт',
       ctaViewWork: 'Дивитись роботи →',
-      marquee: ['Графічний дизайн', 'Веб-розробка', '3D-візуалізація', 'Фірмовий стиль', 'Портфоліо'],
+      marquee: [
+        'Графічний дизайн',
+        'Веб-розробка',
+        '3D-візуалізація',
+        'Фірмовий стиль',
+        'Портфоліо',
+      ],
       pillarsTitle: 'Три напрямки. Один результат.',
       pillarsSubtitle: 'Обирайте окрему послугу або комплексний проєкт під ключ.',
       pillars: [
@@ -58,7 +70,8 @@ export const dictionary = {
     services: {
       badge: 'Наші послуги',
       title: 'Дизайн, сайти та 3D — від ідеї до готового результату',
-      subtitle: 'Оберіть напрямок, щоб побачити повний перелік послуг, приклади робіт та орієнтовні ціни.',
+      subtitle:
+        'Оберіть напрямок, щоб побачити повний перелік послуг, приклади робіт та орієнтовні ціни.',
       viewServices: 'Дивитись послуги →',
       fullListTitle: 'Повний перелік послуг',
       fullListSubtitle: 'Усі послуги за напрямками — оберіть потрібну.',
@@ -75,12 +88,18 @@ export const dictionary = {
       title: 'Проєкти, якими ми пишаємось',
       breadcrumb: 'Портфоліо',
       allProjects: '← Усі проєкти',
-      emptyNote: 'Детальний опис цього кейсу готується. Розкажемо більше особисто — просто напишіть нам.',
+      emptyNote:
+        'Детальний опис цього кейсу готується. Розкажемо більше особисто — просто напишіть нам.',
+    },
+    googleReviews: {
+      badge: 'Google-відгуки',
+      title: 'Що кажуть наші клієнти',
     },
     contact: {
       badge: 'Звʼязатись з нами',
       title: 'Обговоримо ваш проєкт особисто',
-      subtitle: 'Телефонуйте, пишіть у месенджер або на пошту — відповідаємо протягом робочого дня.',
+      subtitle:
+        'Телефонуйте, пишіть у месенджер або на пошту — відповідаємо протягом робочого дня.',
       phonesHeading: 'Телефони',
       noPhone: 'Незабаром додамо номер телефону',
       mailHeading: 'Пошта',
@@ -101,7 +120,13 @@ export const dictionary = {
     },
   },
   ru: {
-    nav: { services: 'Услуги', portfolio: 'Портфолио', contacts: 'Контакты', cta: 'Обсудить проект' },
+    nav: {
+      services: 'Услуги',
+      portfolio: 'Портфолио',
+      reviews: 'Отзывы',
+      contacts: 'Контакты',
+      cta: 'Обсудить проект',
+    },
     footer: {
       servicesHeading: 'Услуги',
       allServices: 'Все услуги',
@@ -121,7 +146,13 @@ export const dictionary = {
         'EnDesign — команда графических дизайнеров, веб-разработчиков и 3D-художников. Превращаем ваш бизнес в узнаваемый бренд: от логотипа до готового сайта.',
       ctaDiscuss: 'Обсудить проект',
       ctaViewWork: 'Смотреть работы →',
-      marquee: ['Графический дизайн', 'Веб-разработка', '3D-визуализация', 'Фирменный стиль', 'Портфолио'],
+      marquee: [
+        'Графический дизайн',
+        'Веб-разработка',
+        '3D-визуализация',
+        'Фирменный стиль',
+        'Портфолио',
+      ],
       pillarsTitle: 'Три направления. Один результат.',
       pillarsSubtitle: 'Выбирайте отдельную услугу или комплексный проект под ключ.',
       pillars: [
@@ -155,7 +186,8 @@ export const dictionary = {
     services: {
       badge: 'Наши услуги',
       title: 'Дизайн, сайты и 3D — от идеи до готового результата',
-      subtitle: 'Выберите направление, чтобы увидеть полный перечень услуг, примеры работ и ориентировочные цены.',
+      subtitle:
+        'Выберите направление, чтобы увидеть полный перечень услуг, примеры работ и ориентировочные цены.',
       viewServices: 'Смотреть услуги →',
       fullListTitle: 'Полный перечень услуг',
       fullListSubtitle: 'Все услуги по направлениям — выберите нужную.',
@@ -172,7 +204,12 @@ export const dictionary = {
       title: 'Проекты, которыми мы гордимся',
       breadcrumb: 'Портфолио',
       allProjects: '← Все проекты',
-      emptyNote: 'Подробное описание этого кейса готовится. Расскажем больше лично — просто напишите нам.',
+      emptyNote:
+        'Подробное описание этого кейса готовится. Расскажем больше лично — просто напишите нам.',
+    },
+    googleReviews: {
+      badge: 'Отзывы Google',
+      title: 'Что говорят наши клиенты',
     },
     contact: {
       badge: 'Связаться с нами',
@@ -198,7 +235,13 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { services: 'Services', portfolio: 'Portfolio', contacts: 'Contact', cta: 'Start a project' },
+    nav: {
+      services: 'Services',
+      portfolio: 'Portfolio',
+      reviews: 'Reviews',
+      contacts: 'Contact',
+      cta: 'Start a project',
+    },
     footer: {
       servicesHeading: 'Services',
       allServices: 'All services',
@@ -215,10 +258,16 @@ export const dictionary = {
       badge: 'Graphic design studio · Kyiv',
       headline: 'Design that speaks **louder** than words',
       subhead:
-        "EnDesign is a team of graphic designers, web developers and 3D artists. We turn your business into a recognisable brand — from logo to finished website.",
+        'EnDesign is a team of graphic designers, web developers and 3D artists. We turn your business into a recognisable brand — from logo to finished website.',
       ctaDiscuss: 'Start a project',
       ctaViewWork: 'View our work →',
-      marquee: ['Graphic design', 'Web development', '3D visualization', 'Brand identity', 'Portfolio'],
+      marquee: [
+        'Graphic design',
+        'Web development',
+        '3D visualization',
+        'Brand identity',
+        'Portfolio',
+      ],
       pillarsTitle: 'Three directions. One result.',
       pillarsSubtitle: 'Pick a single service or a complete project, start to finish.',
       pillars: [
@@ -252,7 +301,8 @@ export const dictionary = {
     services: {
       badge: 'Our services',
       title: 'Design, websites and 3D — from idea to finished result',
-      subtitle: 'Choose a direction to see the full list of services, work samples and indicative pricing.',
+      subtitle:
+        'Choose a direction to see the full list of services, work samples and indicative pricing.',
       viewServices: 'View services →',
       fullListTitle: 'Full list of services',
       fullListSubtitle: 'Every service by direction — pick what you need.',
@@ -269,7 +319,12 @@ export const dictionary = {
       title: "Projects we're proud of",
       breadcrumb: 'Portfolio',
       allProjects: '← All projects',
-      emptyNote: "A detailed write-up of this project is in the works. Get in touch and we'll gladly tell you more.",
+      emptyNote:
+        "A detailed write-up of this project is in the works. Get in touch and we'll gladly tell you more.",
+    },
+    googleReviews: {
+      badge: 'Google Reviews',
+      title: 'What our clients say',
     },
     contact: {
       badge: 'Get in touch',

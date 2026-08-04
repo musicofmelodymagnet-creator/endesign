@@ -10,6 +10,7 @@ import { HeroVideo } from '@/components/HeroVideo'
 import { LogoMarquee } from '@/components/LogoMarquee'
 import { Marquee } from '@/components/Marquee'
 import { TeamSection } from '@/components/TeamSection'
+import { GoogleReviewsSection } from '@/components/GoogleReviews/GoogleReviewsSection'
 import { Reveal } from '@/components/Reveal'
 import { StampBadge } from '@/components/StampBadge'
 import { getCachedGlobal } from '@/utilities/getGlobals'
@@ -117,7 +118,12 @@ export default async function HomePage({ params }: Args) {
           </Reveal>
 
           <Reveal delay={0.16}>
-            <p className={cn('mt-8 max-w-lg text-lg', hasVideo ? 'text-[#F8F3E7]/75' : 'text-muted-foreground')}>
+            <p
+              className={cn(
+                'mt-8 max-w-lg text-lg',
+                hasVideo ? 'text-[#F8F3E7]/75' : 'text-muted-foreground',
+              )}
+            >
               {home?.subhead}
             </p>
           </Reveal>
@@ -164,7 +170,9 @@ export default async function HomePage({ params }: Args) {
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {(home?.pillars || []).map((p, i) => {
             const service = typeof p.linkedService === 'object' ? p.linkedService : null
-            const href = service?.slug ? `/${locale}/services/${service.slug}` : `/${locale}/services`
+            const href = service?.slug
+              ? `/${locale}/services/${service.slug}`
+              : `/${locale}/services`
             return (
               <Reveal key={p.id || i} delay={i * 0.08}>
                 <Link
@@ -248,6 +256,8 @@ export default async function HomePage({ params }: Args) {
           </Reveal>
         </section>
       )}
+
+      <GoogleReviewsSection widgetId={site?.googleReviewsWidgetId} locale={locale} />
 
       {/* ------------------------------------------------------------------ Team */}
       <TeamSection locale={locale} />
