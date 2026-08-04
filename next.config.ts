@@ -88,7 +88,9 @@ const nextConfig: NextConfig = {
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      // lh3.googleusercontent.com serves the reviewer avatars hotlinked in
+      // the (temporary, hardcoded) Google reviews carousel — see src/data/googleReviews.ts.
+      "img-src 'self' data: blob: https://lh3.googleusercontent.com",
       "font-src 'self' data:",
       "media-src 'self'",
       "connect-src 'self'",

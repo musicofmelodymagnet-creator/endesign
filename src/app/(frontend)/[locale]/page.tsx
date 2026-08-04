@@ -9,6 +9,7 @@ import { Media } from '@/components/Media'
 import { HeroVideo } from '@/components/HeroVideo'
 import { LogoMarquee } from '@/components/LogoMarquee'
 import { Marquee } from '@/components/Marquee'
+import { GoogleReviewsSection } from '@/components/GoogleReviews/GoogleReviewsSection'
 import { TeamSection } from '@/components/TeamSection'
 import { Reveal } from '@/components/Reveal'
 import { StampBadge } from '@/components/StampBadge'
@@ -248,6 +249,9 @@ export default async function HomePage({ params }: Args) {
           </Reveal>
         </section>
       )}
+
+      {/* ---------------------------------------------------------- Google reviews */}
+      <GoogleReviewsSection locale={locale} />
 
       {/* ------------------------------------------------------------------ Team */}
       <TeamSection locale={locale} />

@@ -12,6 +12,7 @@ import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { ContactSection } from '@/components/ContactSection'
+import { GoogleReviewsSection } from '@/components/GoogleReviews/GoogleReviewsSection'
 import type { Locale } from '@/i18n/config'
 
 // No generateStaticParams here on purpose: pre-rendering these at build time
@@ -54,7 +55,10 @@ export default async function Page({ params: paramsPromise }: Args) {
       {draft && <LivePreviewListener />}
 
       {isContactPage ? (
-        <ContactSection locale={locale as Locale} />
+        <>
+          <ContactSection locale={locale as Locale} />
+          <GoogleReviewsSection locale={locale as Locale} />
+        </>
       ) : (
         <>
           <RenderHero {...hero} />

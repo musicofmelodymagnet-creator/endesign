@@ -4,7 +4,13 @@ export type Dictionary = typeof dictionary.uk
 
 export const dictionary = {
   uk: {
-    nav: { services: 'Послуги', portfolio: 'Портфоліо', contacts: 'Контакти', cta: 'Обговорити проєкт' },
+    nav: {
+      services: 'Послуги',
+      portfolio: 'Портфоліо',
+      reviews: 'Відгуки',
+      contacts: 'Контакти',
+      cta: 'Обговорити проєкт',
+    },
     footer: {
       servicesHeading: 'Послуги',
       allServices: 'Усі послуги',
@@ -77,6 +83,14 @@ export const dictionary = {
       allProjects: '← Усі проєкти',
       emptyNote: 'Детальний опис цього кейсу готується. Розкажемо більше особисто — просто напишіть нам.',
     },
+    reviews: {
+      badge: 'Google-відгуки',
+      title: 'Нам довіряють. Google це підтверджує',
+      subtitle: 'Реальні відгуки клієнтів студії EnDesign — без вигадок і без редагування.',
+      ratingCaption: 'Середня оцінка на Google',
+      reviewsCountLabel: 'відгуків',
+      ctaLabel: 'Усі відгуки в Google →',
+    },
     contact: {
       badge: 'Звʼязатись з нами',
       title: 'Обговоримо ваш проєкт особисто',
@@ -101,7 +115,13 @@ export const dictionary = {
     },
   },
   ru: {
-    nav: { services: 'Услуги', portfolio: 'Портфолио', contacts: 'Контакты', cta: 'Обсудить проект' },
+    nav: {
+      services: 'Услуги',
+      portfolio: 'Портфолио',
+      reviews: 'Отзывы',
+      contacts: 'Контакты',
+      cta: 'Обсудить проект',
+    },
     footer: {
       servicesHeading: 'Услуги',
       allServices: 'Все услуги',
@@ -174,6 +194,14 @@ export const dictionary = {
       allProjects: '← Все проекты',
       emptyNote: 'Подробное описание этого кейса готовится. Расскажем больше лично — просто напишите нам.',
     },
+    reviews: {
+      badge: 'Google-отзывы',
+      title: 'Нам доверяют. Google это подтверждает',
+      subtitle: 'Реальные отзывы клиентов студии EnDesign — без выдумок и без редактирования.',
+      ratingCaption: 'Средняя оценка на Google',
+      reviewsCountLabel: 'отзывов',
+      ctaLabel: 'Все отзывы в Google →',
+    },
     contact: {
       badge: 'Связаться с нами',
       title: 'Обсудим ваш проект лично',
@@ -198,7 +226,13 @@ export const dictionary = {
     },
   },
   en: {
-    nav: { services: 'Services', portfolio: 'Portfolio', contacts: 'Contact', cta: 'Start a project' },
+    nav: {
+      services: 'Services',
+      portfolio: 'Portfolio',
+      reviews: 'Reviews',
+      contacts: 'Contact',
+      cta: 'Start a project',
+    },
     footer: {
       servicesHeading: 'Services',
       allServices: 'All services',
@@ -270,6 +304,14 @@ export const dictionary = {
       breadcrumb: 'Portfolio',
       allProjects: '← All projects',
       emptyNote: "A detailed write-up of this project is in the works. Get in touch and we'll gladly tell you more.",
+    },
+    reviews: {
+      badge: 'Google reviews',
+      title: 'Trusted by clients — and Google agrees',
+      subtitle: 'Real reviews from EnDesign clients — no edits, no cherry-picked wording.',
+      ratingCaption: 'Average rating on Google',
+      reviewsCountLabel: 'reviews',
+      ctaLabel: 'All reviews on Google →',
     },
     contact: {
       badge: 'Get in touch',
