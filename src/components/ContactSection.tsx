@@ -16,24 +16,9 @@ import { getDictionary } from '@/i18n/dictionary'
 import type { Locale } from '@/i18n/config'
 
 const MESSENGERS = [
-  {
-    key: 'telegram' as const,
-    label: 'Telegram',
-    href: (v: string) => `https://t.me/${v}`,
-    Icon: TelegramIcon,
-  },
-  {
-    key: 'viber' as const,
-    label: 'Viber',
-    href: (v: string) => `viber://chat?number=${v}`,
-    Icon: ViberIcon,
-  },
-  {
-    key: 'whatsapp' as const,
-    label: 'WhatsApp',
-    href: (v: string) => `https://wa.me/${v}`,
-    Icon: WhatsAppIcon,
-  },
+  { key: 'telegram' as const, label: 'Telegram', href: (v: string) => `https://t.me/${v}`, Icon: TelegramIcon },
+  { key: 'viber' as const, label: 'Viber', href: (v: string) => `viber://chat?number=${v}`, Icon: ViberIcon },
+  { key: 'whatsapp' as const, label: 'WhatsApp', href: (v: string) => `https://wa.me/${v}`, Icon: WhatsAppIcon },
 ]
 
 const CARRIER_ICONS = {
@@ -64,8 +49,7 @@ export async function ContactSection({ locale }: { locale: Locale }) {
           <div className="mt-4 flex flex-col gap-3">
             {phones.length > 0 ? (
               phones.map((p, i) => {
-                const CarrierIcon =
-                  p.carrier && p.carrier !== 'none' ? CARRIER_ICONS[p.carrier] : null
+                const CarrierIcon = p.carrier && p.carrier !== 'none' ? CARRIER_ICONS[p.carrier] : null
                 return (
                   <a
                     key={i}
@@ -88,10 +72,7 @@ export async function ContactSection({ locale }: { locale: Locale }) {
                 {t.contact.mailHeading}
               </span>
               <div className="mt-2">
-                <a
-                  href={`mailto:${site.email}`}
-                  className="link-underline font-display w-fit text-xl"
-                >
+                <a href={`mailto:${site.email}`} className="link-underline font-display w-fit text-xl">
                   {site.email}
                 </a>
               </div>
@@ -99,10 +80,7 @@ export async function ContactSection({ locale }: { locale: Locale }) {
           )}
         </Reveal>
 
-        <Reveal
-          delay={0.1}
-          className="border-border/60 bg-foreground text-background rounded-3xl border p-8"
-        >
+        <Reveal delay={0.1} className="border-border/60 bg-foreground text-background rounded-3xl border p-8">
           <span className="font-display text-sm tracking-wide uppercase opacity-60">
             {t.contact.messengersHeading}
           </span>

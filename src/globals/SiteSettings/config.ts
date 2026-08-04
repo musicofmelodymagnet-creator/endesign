@@ -11,8 +11,7 @@ export const SiteSettings: GlobalConfig = {
     update: authenticated,
   },
   admin: {
-    description:
-      'Контакти, відео на головній та SEO за замовчуванням — використовується по всьому сайту.',
+    description: 'Контакти, відео на головній та SEO за замовчуванням — використовується по всьому сайту.',
   },
   fields: [
     {
@@ -63,15 +62,6 @@ export const SiteSettings: GlobalConfig = {
       label: 'Адреса офісу',
       admin: {
         description: 'Показується у футері та на сторінці контактів.',
-      },
-    },
-    {
-      name: 'googleReviewsWidgetId',
-      type: 'text',
-      label: 'Google Reviews — Widget ID (Featurable)',
-      admin: {
-        description:
-          'ID віджета з featurable.com (Embed → API). Якщо порожньо — блок з відгуками просто не показується.',
       },
     },
     {

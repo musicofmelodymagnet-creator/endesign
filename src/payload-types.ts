@@ -2045,10 +2045,6 @@ export interface SiteSetting {
    * Показується у футері та на сторінці контактів.
    */
   address?: string | null;
-  /**
-   * ID віджета з featurable.com (Embed → API). Якщо порожньо — блок з відгуками просто не показується.
-   */
-  googleReviewsWidgetId?: string | null;
   telegram?: string | null;
   viber?: string | null;
   whatsapp?: string | null;
@@ -2211,7 +2207,6 @@ export interface SiteSettingsSelect<T extends boolean = true> {
       };
   email?: T;
   address?: T;
-  googleReviewsWidgetId?: T;
   telegram?: T;
   viber?: T;
   whatsapp?: T;

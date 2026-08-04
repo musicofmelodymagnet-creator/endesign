@@ -99,9 +99,6 @@ export const HeaderNav: React.FC<{
         <Link href={`/${locale}/portfolio`} className={linkClass}>
           {t.nav.portfolio}
         </Link>
-        <Link href={`/${locale}#google-reviews`} className={linkClass}>
-          {t.nav.reviews}
-        </Link>
         <Link href={`/${locale}/kontakty`} className={linkClass}>
           {t.nav.contacts}
         </Link>
@@ -179,9 +176,6 @@ export const HeaderNav: React.FC<{
 
             <Link href={`/${locale}/portfolio`} className="font-display text-2xl">
               {t.nav.portfolio}
-            </Link>
-            <Link href={`/${locale}#google-reviews`} className="font-display text-2xl">
-              {t.nav.reviews}
             </Link>
             <Link href={`/${locale}/kontakty`} className="font-display text-2xl">
               {t.nav.contacts}
