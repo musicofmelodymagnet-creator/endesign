@@ -10,6 +10,7 @@ import { Reveal } from '@/components/Reveal'
 import { StampBadge } from '@/components/StampBadge'
 import { getDictionary } from '@/i18n/dictionary'
 import type { Locale } from '@/i18n/config'
+import { getCachedGlobal } from '@/utilities/getGlobals'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { generateAlternates } from '@/utilities/generateAlternates'
 import { getServerSideURL } from '@/utilities/getURL'
@@ -73,7 +74,7 @@ export default async function PortfolioIndex({ params }: Args) {
   )
 }
 
-const META: Record<Locale, { title: string; description: string }> = {
+const DEFAULT_META: Record<Locale, { title: string; description: string }> = {
   uk: {
     title: 'Портфоліо | EnDesign',
     description: 'Проєкти студії EnDesign: графічний дизайн, сайти та 3D-візуалізація для наших клієнтів.',
@@ -90,7 +91,12 @@ const META: Record<Locale, { title: string; description: string }> = {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale }
-  const meta = META[locale] || META.uk
+  const site = await getCachedGlobal('site-settings', 0, locale)()
+  const fallback = DEFAULT_META[locale] || DEFAULT_META.uk
+  const meta = {
+    title: site?.pageSeo?.portfolioList?.title || fallback.title,
+    description: site?.pageSeo?.portfolioList?.description || fallback.description,
+  }
   return {
     ...meta,
     alternates: generateAlternates(locale, '/portfolio'),

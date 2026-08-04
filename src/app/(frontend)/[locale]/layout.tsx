@@ -60,6 +60,7 @@ export default async function RootLayout({ children, params }: Args) {
     where: { title: { equals: `brief-${locale}` } },
     limit: 1,
     depth: 0,
+    locale,
   })
 
   return (
@@ -97,10 +98,13 @@ export default async function RootLayout({ children, params }: Args) {
   )
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL(getServerSideURL()),
-  openGraph: mergeOpenGraph(),
-  twitter: {
-    card: 'summary_large_image',
-  },
+export async function generateMetadata({ params }: Args): Promise<Metadata> {
+  const { locale } = await params
+  return {
+    metadataBase: new URL(getServerSideURL()),
+    openGraph: mergeOpenGraph(undefined, isLocale(locale) ? locale : 'uk'),
+    twitter: {
+      card: 'summary_large_image',
+    },
+  }
 }

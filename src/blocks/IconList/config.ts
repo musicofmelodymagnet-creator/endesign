@@ -5,6 +5,14 @@ export const IconListBlock: Block = {
   interfaceName: 'IconListBlock',
   fields: [
     {
+      name: 'kicker',
+      type: 'text',
+      localized: true,
+      admin: {
+        description: 'Small stamp-style label shown above the title (optional).',
+      },
+    },
+    {
       name: 'title',
       type: 'text',
       localized: true,

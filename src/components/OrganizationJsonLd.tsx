@@ -2,17 +2,20 @@ import type { Locale } from '@/i18n/config'
 import { getCachedGlobal } from '@/utilities/getGlobals'
 import { getServerSideURL } from '@/utilities/getURL'
 
-const COPY: Record<Locale, { description: string }> = {
+const COPY: Record<Locale, { description: string; addressLocality: string }> = {
   uk: {
     description:
       'Студія графічного дизайну, розробки сайтів та 3D-візуалізації в Києві.',
+    addressLocality: 'Київ',
   },
   ru: {
     description:
       'Студия графического дизайна, разработки сайтов и 3D-визуализации в Киеве.',
+    addressLocality: 'Киев',
   },
   en: {
     description: 'Graphic design, web development and 3D visualization studio in Kyiv.',
+    addressLocality: 'Kyiv',
   },
 }
 
@@ -39,7 +42,7 @@ export async function OrganizationJsonLd({ locale }: { locale: Locale }) {
       ? {
           '@type': 'PostalAddress',
           streetAddress: site.address,
-          addressLocality: 'Київ',
+          addressLocality: copy.addressLocality,
           addressCountry: 'UA',
         }
       : undefined,

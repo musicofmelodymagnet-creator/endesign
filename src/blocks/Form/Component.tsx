@@ -11,6 +11,7 @@ import { Reveal } from '@/components/Reveal'
 import { fields } from './fields'
 import { getClientSideURL } from '@/utilities/getURL'
 import type { Locale } from '@/i18n/config'
+import { getDictionary } from '@/i18n/dictionary'
 
 export type FormBlockType = {
   blockName?: string
@@ -33,6 +34,7 @@ export const FormBlock: React.FC<
     introContent,
     locale,
   } = props
+  const t = getDictionary(locale || 'uk').form
 
   const formMethods = useForm({
     defaultValues: formFromProps.fields,
@@ -106,14 +108,14 @@ export const FormBlock: React.FC<
           console.warn(err)
           setIsLoading(false)
           setError({
-            message: 'Something went wrong.',
+            message: t.error,
           })
         }
       }
 
       void submitForm()
     },
-    [router, formID, redirect, confirmationType],
+    [router, formID, redirect, confirmationType, t.error],
   )
 
   return (
@@ -128,7 +130,7 @@ export const FormBlock: React.FC<
               <RichText data={confirmationMessage} />
             )}
             {isLoading && !hasSubmitted && (
-              <p className="text-muted-foreground text-sm">Зачекайте, будь ласка...</p>
+              <p className="text-muted-foreground text-sm">{t.submitting}</p>
             )}
             {error && (
               <div className="text-destructive text-sm">{`${error.status || '500'}: ${error.message || ''}`}</div>

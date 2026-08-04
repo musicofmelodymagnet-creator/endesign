@@ -7,7 +7,7 @@ import React, { Fragment } from 'react'
  */
 export function textWithBreaks(text?: string | null): React.ReactNode {
   if (!text) return text
-  const parts = text.split(/<br\s*\/?>/gi)
+  const parts = text.split(/<br(?:\s+[^>]*)?\/?>/gi)
   if (parts.length === 1) return text
 
   return parts.map((part, i) => (

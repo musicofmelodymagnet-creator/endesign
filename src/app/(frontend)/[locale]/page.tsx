@@ -276,7 +276,9 @@ export default async function HomePage({ params }: Args) {
   )
 }
 
-const META: Record<Locale, { title: string; description: string }> = {
+// Fallback used only if the CMS field is empty (e.g. right after a fresh
+// install, before an editor has filled in site-settings.pageSeo.home).
+const DEFAULT_META: Record<Locale, { title: string; description: string }> = {
   uk: {
     title: 'EnDesign — студія графічного дизайну, сайтів та 3D у Києві',
     description:
@@ -296,7 +298,12 @@ const META: Record<Locale, { title: string; description: string }> = {
 
 export async function generateMetadata({ params }: Args): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale }
-  const meta = META[locale] || META.uk
+  const site = await getCachedGlobal('site-settings', 0, locale)()
+  const fallback = DEFAULT_META[locale] || DEFAULT_META.uk
+  const meta = {
+    title: site?.pageSeo?.home?.title || fallback.title,
+    description: site?.pageSeo?.home?.description || fallback.description,
+  }
   return {
     ...meta,
     alternates: generateAlternates(locale, ''),

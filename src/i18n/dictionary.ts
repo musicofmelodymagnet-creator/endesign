@@ -91,6 +91,13 @@ export const dictionary = {
     form: {
       required: "Це поле обов'язкове",
       invalidEmail: 'Введіть коректний email',
+      submitting: 'Зачекайте, будь ласка...',
+      error: 'Щось пішло не так.',
+    },
+    notFound: {
+      title: '404',
+      message: 'Цю сторінку не знайдено.',
+      homeLink: 'На головну',
     },
   },
   ru: {
@@ -181,6 +188,13 @@ export const dictionary = {
     form: {
       required: 'Это поле обязательно',
       invalidEmail: 'Введите корректный email',
+      submitting: 'Пожалуйста, подождите...',
+      error: 'Что-то пошло не так.',
+    },
+    notFound: {
+      title: '404',
+      message: 'Эта страница не найдена.',
+      homeLink: 'На главную',
     },
   },
   en: {
@@ -271,6 +285,13 @@ export const dictionary = {
     form: {
       required: 'This field is required',
       invalidEmail: 'Please enter a valid email',
+      submitting: 'Please wait...',
+      error: 'Something went wrong.',
+    },
+    notFound: {
+      title: '404',
+      message: 'This page could not be found.',
+      homeLink: 'Go home',
     },
   },
 } as const

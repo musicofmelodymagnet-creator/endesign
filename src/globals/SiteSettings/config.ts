@@ -129,6 +129,44 @@ export const SiteSettings: GlobalConfig = {
         },
       ],
     },
+    {
+      name: 'pageSeo',
+      type: 'group',
+      label: 'SEO окремих сторінок',
+      admin: {
+        description:
+          'SEO-заголовок і опис для сторінок, що не є окремими документами колекцій (головна, перелік послуг, портфоліо).',
+      },
+      fields: [
+        {
+          name: 'home',
+          type: 'group',
+          label: 'Головна сторінка',
+          fields: [
+            { name: 'title', type: 'text', localized: true, label: 'Заголовок (title)' },
+            { name: 'description', type: 'textarea', localized: true, label: 'Опис (description)' },
+          ],
+        },
+        {
+          name: 'servicesList',
+          type: 'group',
+          label: 'Перелік послуг',
+          fields: [
+            { name: 'title', type: 'text', localized: true, label: 'Заголовок (title)' },
+            { name: 'description', type: 'textarea', localized: true, label: 'Опис (description)' },
+          ],
+        },
+        {
+          name: 'portfolioList',
+          type: 'group',
+          label: 'Портфоліо',
+          fields: [
+            { name: 'title', type: 'text', localized: true, label: 'Заголовок (title)' },
+            { name: 'description', type: 'textarea', localized: true, label: 'Опис (description)' },
+          ],
+        },
+      ],
+    },
   ],
   hooks: {
     afterChange: [revalidateSiteSettings],

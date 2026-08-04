@@ -4,15 +4,17 @@ import type { IconListBlock as IconListBlockProps } from '@/payload-types'
 
 import { Media } from '@/components/Media'
 import { Reveal } from '@/components/Reveal'
+import { StampBadge } from '@/components/StampBadge'
 import { textWithBreaks } from '@/utilities/textWithBreaks'
 
-export const IconListBlock: React.FC<IconListBlockProps> = ({ title, subtitle, items }) => {
+export const IconListBlock: React.FC<IconListBlockProps> = ({ kicker, title, subtitle, items }) => {
   if (!items || items.length === 0) return null
 
   return (
     <div className="container">
-      {(title || subtitle) && (
+      {(kicker || title || subtitle) && (
         <Reveal className="mb-10 max-w-2xl">
+          {kicker && <StampBadge className="mb-5">{kicker}</StampBadge>}
           {title && <h2 className="font-display text-3xl md:text-4xl">{textWithBreaks(title)}</h2>}
           {subtitle && <p className="text-muted-foreground mt-3">{textWithBreaks(subtitle)}</p>}
         </Reveal>

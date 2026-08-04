@@ -780,6 +780,10 @@ export interface GalleryBlock {
  * via the `definition` "IconListBlock".
  */
 export interface IconListBlock {
+  /**
+   * Small stamp-style label shown above the title (optional).
+   */
+  kicker?: string | null;
   title?: string | null;
   subtitle?: string | null;
   items?:
@@ -1380,6 +1384,7 @@ export interface GalleryBlockSelect<T extends boolean = true> {
  * via the `definition` "IconListBlock_select".
  */
 export interface IconListBlockSelect<T extends boolean = true> {
+  kicker?: T;
   title?: T;
   subtitle?: T;
   items?:
@@ -2056,6 +2061,23 @@ export interface SiteSetting {
     description?: string | null;
     image?: (number | null) | Media;
   };
+  /**
+   * SEO-заголовок і опис для сторінок, що не є окремими документами колекцій (головна, перелік послуг, портфоліо).
+   */
+  pageSeo?: {
+    home?: {
+      title?: string | null;
+      description?: string | null;
+    };
+    servicesList?: {
+      title?: string | null;
+      description?: string | null;
+    };
+    portfolioList?: {
+      title?: string | null;
+      description?: string | null;
+    };
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -2196,6 +2218,28 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         title?: T;
         description?: T;
         image?: T;
+      };
+  pageSeo?:
+    | T
+    | {
+        home?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+            };
+        servicesList?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+            };
+        portfolioList?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+            };
       };
   updatedAt?: T;
   createdAt?: T;
